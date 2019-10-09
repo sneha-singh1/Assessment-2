@@ -1,0 +1,27 @@
+<div class="container">
+    <form class="col-md-6" (ngSubmit)="viedetails()">
+        <div class="form-group">
+            <h2 >Educational Details </h2>
+        </div>
+        <div class="form-group">
+            <label for="my-input">Degree</label>
+            <input placeholder="Enter degree" class="form-control" type="text" name="degree" [(ngModel)]="degree">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Marks</label>
+            <input placeholder="Enter marks" class="form-control" type="number" name="marks" [(ngModel)]="marks">
+        </div>
+        <div class="form-group">
+            <label for="my-input">College</label>
+            <!-- <input placeholder="Home address" class="form-control" type="text" name="homeaddress"
+                [(ngModel)]="homeaddress"> -->
+            <textarea class="form-control" name="college" id="college" rows="4" placeholder="college"
+                [(ngModel)]="college"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="my-input">Stream</label>
+            <input placeholder="Enter Stream" class="form-control" type="text" name="stream" [(ngModel)]="stream">
+        </div>
+        <button class="btn btn-primary" type="submit">Add</button>
+    </form>
+</div>

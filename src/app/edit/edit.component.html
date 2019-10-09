@@ -1,0 +1,27 @@
+<div class="container">
+    <form class="col-md-6" (ngSubmit)="edit()">
+        <div class="form-group">
+            <h2 >Edit </h2>
+        </div>
+        <div class="form-group">
+            <label for="my-input">Name</label>
+            <input placeholder="Enter Name" class="form-control" type="text" name="name" [(ngModel)]="name">
+        </div>
+        <div class="form-group">
+            <label for="my-input">DOB</label>
+            <input placeholder="Enter DOB" class="form-control" type="date" name="DOB" [(ngModel)]="DOB">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Home address</label>
+            <!-- <input placeholder="Home address" class="form-control" type="text" name="homeaddress"
+                [(ngModel)]="homeaddress"> -->
+            <textarea class="form-control" name="homeaddress" id="homeaddress" rows="4" placeholder="Home address"
+                [(ngModel)]="homeaddress"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="my-input">Phone</label>
+            <input placeholder="Enter phone number" class="form-control" type="number" name="phone" [(ngModel)]="phone">
+        </div>
+        <button class="btn btn-primary" type="submit">Edit</button>
+    </form>
+</div>
